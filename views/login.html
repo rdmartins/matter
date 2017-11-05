@@ -1,0 +1,19 @@
+{% include "header.html" %}
+      <div class="row section">
+        <div class="col s6 offset-s3">
+          <form action="/login" method="post">
+            <div class="input-field">
+              <input id="email" type="email" name="email"/>
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <input id="password" type="password" name="password"/>
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field">
+              <input type="submit" value="Login" class="btn waves-effect waves-light light-blue"/>
+            </div>
+          </form>
+        </div>
+      </div>
+{% include "footer.html" %}

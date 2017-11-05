@@ -1,0 +1,55 @@
+{% include "header.html" %}
+      <div class="row">
+        <div class="col s12 l8">
+          <h2 class="light-blue-text">You can make it <strong class="light-blue-text text-darken-3">matter</strong> to someone,</h2>
+          <h3 class="light-blue-text">and you can make it now!</h3>
+        </div>
+        <div class="col s12 l4 card light-blue lighten-4">
+            <form id="first-form" method="post" action="/payment" novalidate>
+            <div class="section">
+              <div class="input-field">
+                <input id="quantity" type="text" name="quantity" class="currency pristine">
+                <label for="quantity">I want to donate</label>
+              </div>
+            </div>
+            <div id="value-chooser" class="section center">
+              <div class="row">
+                <div class="col s6">
+                  <a id="donate-30" class="waves-effect waves-light-blue btn-flat blue-text text-darken-3">R$ 30</a>
+                </div>
+                <div class="col s6">
+                  <a id="donate-40" class="waves-effect waves-light-blue btn-flat blue-text text-darken-3">R$ 40</a>
+                </div>
+                <div class="col s6">
+                  <a id="donate-50" class="waves-effect waves-light-blue btn-flat blue-text text-darken-3">R$ 50</a>
+                </div>
+                <div class="col s6">
+                  <a id="donate-75" class="waves-effect waves-light-blue btn-flat blue-text text-darken-3">R$ 75</a>
+                </div>
+                <div class="col s6">
+                  <a id="donate-100" class="waves-effect waves-light-blue btn-flat blue-text text-darken-3">R$ 100</a>
+                </div>
+                <div class="col s6">
+                  <a id="donate-150" class="waves-effect waves-light-blue btn-flat blue-text text-darken-3">R$ 150</a>
+                </div>
+              </div>
+            </div>
+            <div id="name-section">
+              <div class="input-field">
+                <input id="name" type="text" name="name" class="pristine">
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input id="email" type="email" name="email" class="pristine">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="section">
+              <div class="input-field">
+                <input id="submit" type="submit" value="Make it matter" class="btn waves-effect waves-light light-blue"/>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+{% include "footer.html" %}

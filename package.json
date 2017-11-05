@@ -1,0 +1,17 @@
+{
+  "name": "matter",
+  "version": "1.0.0",
+  "description": "Generic donation platform",
+  "main": "app.js",
+  "author": "Rafael Delgado Martins <raziel_takato@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "assert": "^1.4.1",
+    "body-parser": "^1.18.2",
+    "consolidate": "^0.15.0",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "nunjucks": "^3.0.1"
+  }
+}

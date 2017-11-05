@@ -1,0 +1,27 @@
+body {
+  background-color: #e1f5fe;
+}
+.input-field label {
+  color: #03A9F4 !important;
+}
+.input-field input:focus + label {
+  color: #1565C0 !important;
+}
+.input-field input {
+  border-bottom: 1px solid #03A9F4 !important;
+}
+.input-field input:focus {
+  border-bottom: 1px solid #1565C0 !important;
+  box-shadow: 0 1px 0 0 #1565C0 !important;
+}
+.input-field input.valid {
+  border-bottom: 1px solid #f44336;
+  box-shadow: 0 1px 0 0 #f44336;
+}
+.input-field input.invalid {
+  border-bottom: 1px solid #f44336;
+  box-shadow: 0 1px 0 0 #f44336;
+}
+#name-section {
+  display: none;
+}

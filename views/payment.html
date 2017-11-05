@@ -1,0 +1,85 @@
+{% include "header.html" %}
+      <div class="row card light-blue lighten-4 center light-blue-text text-darken-3">
+        <div class="col s12 l7">
+          <h4 class="flow-text">{{ name }}</h4>
+          <h4 class="flow-text">{{ email }}</h4>
+        </div>
+        <div class="col s12 l5 light-blue lighten-3">
+          <h1>R$ {{ quantity }}</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <form id="second-form" method="post" action="/thank-you" novalidate>
+            <input type="hidden" name="user-id" value="{{ userId }}">
+            <input type="hidden" name="quantity" value="{{ quantity }}">
+            <div class="section">
+              <div class="row">
+                <div class="input-field col s12 l4">
+                  <input id="cpf" type="text" name="cpf" class="cpf pristine">
+                  <label for="cpf">CPF</label>
+                </div>
+                <div class="input-field col s12 l4">
+                  <input id="birthdate" type="text" name="birthdate" class="date pristine">
+                  <label for="birthdate">Data de Nascimento</label>
+                </div>
+                <div class="input-field col s12 l4">
+                  <input id="phone" type="text" name="phone" class="phone pristine">
+                  <label for="phone">Telefone</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12 l2">
+                  <input id="cep" type="text" name="cep" class="cep pristine" data-auto-cep="cep">
+                  <label for="cep">CEP</label>
+                </div>
+                <div class="input-field col s12 l8">
+                  <input id="address" type="text" name="address" class="pristine" data-auto-cep="logradouro">
+                  <label for="address" data-auto-cep-label="logradouro">Endereço</label>
+                </div>
+                <div class="input-field col s12 l2">
+                  <input id="number" type="text" name="number" class="number pristine">
+                  <label for="number">Número</label>
+                </div>
+                <div class="input-field col s12 l3">
+                  <input id="complement" type="text" name="complement" class="pristine">
+                  <label for="complement">Complemento</label>
+                </div>
+                <div class="input-field col s12 l3">
+                  <input id="district" type="text" name="district" class="pristine" data-auto-cep="bairro">
+                  <label for="district" data-auto-cep-label="bairro">Bairro</label>
+                </div>
+                <div class="input-field col s12 l3">
+                  <input id="city" type="text" name="city" class="pristine" data-auto-cep="cidade">
+                  <label for="city" data-auto-cep-label="cidade">Cidade</label>
+                </div>
+                <div class="input-field col s12 l3">
+                  <input id="state" type="text" name="state" class="pristine" data-auto-cep="estado">
+                  <label for="state" data-auto-cep-label="estado">Estado</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12 l5">
+                  <input id="card-name" type="text" name="card-name" class="pristine">
+                  <label for="card-name">Nome do titular</label>
+                </div>
+                <div class="input-field col s12 l5">
+                  <input id="card-number" type="text" name="card-number" class="credit-card pristine">
+                  <label for="card-number">Número do cartão</label>
+                </div>
+                <div class="input-field col s12 l2">
+                  <input id="card-date" type="text" name="card-date" class="credit-card-date pristine">
+                  <label for="card-date">Vencimento</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field">
+                  <input id="submit" type="submit" value="Make it matter" class="btn waves-effect waves-light light-blue"/>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script type="text/javascript" src="autocep.js"></script>
+{% include "footer.html" %}
