@@ -1,11 +1,14 @@
 body {
   background-color: #e1f5fe;
 }
+.text-accent {
+  color: #6200ea !important;
+}
 .input-field label {
   color: #03A9F4 !important;
 }
 .input-field input:focus + label {
-  color: #1565C0 !important;
+  color: #6200ea !important;
 }
 .input-field input {
   border-bottom: 1px solid #03A9F4 !important;
