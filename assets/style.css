@@ -7,23 +7,15 @@ body {
 .input-field label {
   color: #03A9F4 !important;
 }
-.input-field input:focus + label {
+.input-field input[type="text"]:focus + label {
   color: #6200ea !important;
 }
-.input-field input {
+.input-field input[type="text"] {
   border-bottom: 1px solid #03A9F4 !important;
 }
-.input-field input:focus {
+.input-field input[type="text"]:focus {
   border-bottom: 1px solid #1565C0 !important;
   box-shadow: 0 1px 0 0 #1565C0 !important;
-}
-.input-field input.valid {
-  border-bottom: 1px solid #f44336;
-  box-shadow: 0 1px 0 0 #f44336;
-}
-.input-field input.invalid {
-  border-bottom: 1px solid #f44336;
-  box-shadow: 0 1px 0 0 #f44336;
 }
 #name-section {
   display: none;
